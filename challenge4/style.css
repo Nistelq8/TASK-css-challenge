@@ -1,15 +1,45 @@
 /* Add your code in each class */
 body {
+  overflow: scroll;
+  background-color: #220425;
 }
 .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .movie-card {
+  width: 350px;
+  height: 325px;
+  position: relative;
+  background: #000;
 }
 .movie-image {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  object-fit: fill;
+  object-position: center;
+  z-index: 0;
 }
 .movie-details-container {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  z-index: 1;
 }
+
 .descriptions {
+  padding: 0 5%;
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 /*A gift from us!*/
@@ -26,6 +56,12 @@ body {
     rgba(0, 0, 0, 0.75) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
+
 .movie-title {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0;
 }
